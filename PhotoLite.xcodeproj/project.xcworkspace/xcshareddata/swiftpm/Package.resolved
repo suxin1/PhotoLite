@@ -1,0 +1,33 @@
+{
+  "originHash" : "e26f4eac391d64bbb7882dde6cd994475e64ec004ad97b23035909f4e38c03c7",
+  "pins" : [
+    {
+      "identity" : "coreimageextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DigitalMasterpieces/CoreImageExtensions",
+      "state" : {
+        "revision" : "10812abd5449ddfb32f096851ea19691e7a948be",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "filekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nvzqz/FileKit.git",
+      "state" : {
+        "revision" : "9006d2888025fbe893c3c396327b2fe45a8c177b",
+        "version" : "6.1.0"
+      }
+    },
+    {
+      "identity" : "routing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JamesSedlacek/Routing.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "84e3729c7771ba631cd4966cab3fd88054fc5f53"
+      }
+    }
+  ],
+  "version" : 3
+}

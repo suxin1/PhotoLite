@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		188F98332D1D4A3100FF831C /* CoreImageExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 188F98322D1D4A3100FF831C /* CoreImageExtensions */; };
+		188F98382D1D4A5100FF831C /* FileKit in Frameworks */ = {isa = PBXBuildFile; productRef = 188F98372D1D4A5100FF831C /* FileKit */; };
+		188F983B2D1D4A6F00FF831C /* Routing in Frameworks */ = {isa = PBXBuildFile; productRef = 188F983A2D1D4A6F00FF831C /* Routing */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		188F97D72D1D47CF00FF831C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188F98382D1D4A5100FF831C /* FileKit in Frameworks */,
+				188F98332D1D4A3100FF831C /* CoreImageExtensions in Frameworks */,
+				188F983B2D1D4A6F00FF831C /* Routing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,10 @@
 			);
 			name = PhotoLite;
 			packageProductDependencies = (
+				188F98322D1D4A3100FF831C /* CoreImageExtensions */,
+				188F98342D1D4A3100FF831C /* CoreImageExtensions-dynamic */,
+				188F98372D1D4A5100FF831C /* FileKit */,
+				188F983A2D1D4A6F00FF831C /* Routing */,
 			);
 			productName = PhotoLite;
 			productReference = 188F97C22D1D47CE00FF831C /* PhotoLite.app */;
@@ -208,6 +221,11 @@
 			);
 			mainGroup = 188F97B92D1D47CE00FF831C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				188F98312D1D4A3100FF831C /* XCRemoteSwiftPackageReference "CoreImageExtensions" */,
+				188F98362D1D4A5100FF831C /* XCRemoteSwiftPackageReference "FileKit" */,
+				188F98392D1D4A6F00FF831C /* XCRemoteSwiftPackageReference "Routing" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 188F97C32D1D47CE00FF831C /* Products */;
 			projectDirPath = "";
@@ -566,6 +584,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		188F98312D1D4A3100FF831C /* XCRemoteSwiftPackageReference "CoreImageExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DigitalMasterpieces/CoreImageExtensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+		188F98362D1D4A5100FF831C /* XCRemoteSwiftPackageReference "FileKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nvzqz/FileKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		188F98392D1D4A6F00FF831C /* XCRemoteSwiftPackageReference "Routing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JamesSedlacek/Routing.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		188F98322D1D4A3100FF831C /* CoreImageExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188F98312D1D4A3100FF831C /* XCRemoteSwiftPackageReference "CoreImageExtensions" */;
+			productName = CoreImageExtensions;
+		};
+		188F98342D1D4A3100FF831C /* CoreImageExtensions-dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188F98312D1D4A3100FF831C /* XCRemoteSwiftPackageReference "CoreImageExtensions" */;
+			productName = "CoreImageExtensions-dynamic";
+		};
+		188F98372D1D4A5100FF831C /* FileKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188F98362D1D4A5100FF831C /* XCRemoteSwiftPackageReference "FileKit" */;
+			productName = FileKit;
+		};
+		188F983A2D1D4A6F00FF831C /* Routing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188F98392D1D4A6F00FF831C /* XCRemoteSwiftPackageReference "Routing" */;
+			productName = Routing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 188F97BA2D1D47CE00FF831C /* Project object */;
 }
