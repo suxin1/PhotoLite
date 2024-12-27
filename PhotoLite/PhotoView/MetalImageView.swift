@@ -302,7 +302,7 @@ struct MetalImageView: ViewRepresentable {
                     rpd?.colorAttachments[0].loadAction = .clear
                     rpd?.colorAttachments[0].storeAction = .store
                     let re = commandBuffer.makeRenderCommandEncoder(descriptor: rpd!)
-                    drawPolygon(encoder: re!, numberOfSides: 5, x: 200, y: 200, radius: Float(250), isFilled: false, view: view)
+//                    drawPolygon(encoder: re!, numberOfSides: 5, x: 200, y: 200, radius: Float(250), isFilled: false, view: view)
                     re?.endEncoding()
                     
                     let renderImage = image
